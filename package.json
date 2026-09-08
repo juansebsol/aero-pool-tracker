@@ -1,0 +1,48 @@
+{
+  "name": "aero-pool-tracker",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node scripts/run.mjs dev",
+    "dev:web": "next dev",
+    "dev:live": "node scripts/run.mjs dev",
+    "build": "next build",
+    "start": "node scripts/run.mjs start",
+    "start:web": "next start",
+    "typecheck": "tsc --noEmit",
+    "indexer": "node --experimental-strip-types scripts/indexer.ts",
+    "test": "node --experimental-strip-types --test tests/*.test.ts",
+    "serve": "node scripts/run.mjs dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/juansebsol/aero-pool-tracker.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/juansebsol/aero-pool-tracker/issues"
+  },
+  "homepage": "https://github.com/juansebsol/aero-pool-tracker#readme",
+  "dependencies": {
+    "@phosphor-icons/react": "^2.1.10",
+    "dotenv": "^17.4.2",
+    "next": "^16.3.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "viem": "^2.56.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.5.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "typescript": "^5.9.3"
+  },
+  "private": true,
+  "engines": {
+    "node": ">=24.0.0"
+  }
+}
